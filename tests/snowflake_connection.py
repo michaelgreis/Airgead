@@ -1,8 +1,19 @@
 import subprocess
+import os
 
-account = ""
-username = ""
-password = ""
+#setting variables based upon the windows global variables. Global variables setup outside of this codebase.
+#account = os.getenv('snowflake_account')
+#username = os.getenv('snowflake_username')
+#password = os.getenv('snowflake_password')
 
-cmd = f"snowsql -a {account} -u {username} -w {password}"
-subprocess.run(cmd, shell=True)
+#snowsql executable which will be used
+#snow_path = "C:\Program Files\Snowflake SnowSQL\snowsql.exe"
+
+#login command
+#command = [snow_path,"-a",account,"-u",username,"-w",password]
+
+#execute command
+#subprocess.run(command)
+
+command = "snowsql -c newConnection"
+subprocess.run(command)

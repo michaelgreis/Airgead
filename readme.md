@@ -1,7 +1,7 @@
 The purpose of this effort is to allow for folks who want to make projections for personal finance reason. Of course all of this could be done in Excel, but if you want to tweak and record the different scenarios this is useful. I also wanted to setup a process for writing data to Snowflake and learn some new things!
 
 What is needed:
-- Snowflake Account
+- Snowflake Account & "newConnection" credentials (set in the snowflake config file [.snowsql folder])
 - Snowflake CLI installed locally
 - Python installed locally
 
